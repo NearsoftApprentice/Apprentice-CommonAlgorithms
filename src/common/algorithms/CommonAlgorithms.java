@@ -1,8 +1,5 @@
 package common.algorithms;
 
-import common.algorithms.busqueda.Busqueda;
-import common.algorithms.ordenamiento.Ordenamiento;
-
 import java.util.Arrays;
 
 public class CommonAlgorithms {
@@ -16,24 +13,24 @@ public class CommonAlgorithms {
         //Primer implementacion
         System.out.println("Original: ");
         printArray(array1);
-        //Ordenar array
+        //ClaseOrdenamiento.ordenar(array1)
         System.out.println("Ordenado:");
         printArray(array1);
 
         //Segunda implementacion
         System.out.println("Original: ");
         printArray(array2);
-        //Ordenar array
+        //ClaseOrdenamiento.ordenar(array2)
         System.out.println("Ordenado:");
         printArray(array2);
 
         //Busqueda
         //int t = 5;
-        //int indice = Busqueda.metodo(array, t);
+        //int indice = ClaseBusqueda.buscar(array, t);
         //System.out.println("Elemento " + t + " ubicado en indice " + indice);
 
         //t = 7;
-        //indice = Busqueda.metodo(array, t);
+        //indice = ClaseBusqueda.buscar(array, t);
         //System.out.println("Elemento " + t + " ubicado en indice " + indice);
 
     }
