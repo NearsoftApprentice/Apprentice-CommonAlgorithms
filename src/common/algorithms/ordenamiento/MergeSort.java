@@ -24,9 +24,6 @@ public class MergeSort {
                 R[i-mid] = array[i];
             }
 
-            System.out.println(Arrays.toString(L));
-            System.out.println(Arrays.toString(R));
-
             ordenar(L);
             ordenar(R);
             merge(array, L, R);
