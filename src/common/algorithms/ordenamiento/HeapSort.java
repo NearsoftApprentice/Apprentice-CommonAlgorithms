@@ -2,8 +2,6 @@ package common.algorithms.ordenamiento;
 
 import common.algorithms.ordenamiento.utileria.Utileria;
 
-import java.util.Arrays;
-
 public class HeapSort {
 
     /**

@@ -1,7 +1,5 @@
 package common.algorithms.ordenamiento;
 
-import java.util.Arrays;
-
 public class MergeSort {
 
     /**
