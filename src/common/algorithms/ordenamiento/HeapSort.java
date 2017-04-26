@@ -17,7 +17,7 @@ public class HeapSort {
 
         for(int i=heapSize; i>0; i--) {
             Utileria.swap(array, 0, i);
-            heapSize=heapSize-1;
+            heapSize--;
             maxHeap(array, 0, heapSize);
         }
     }
@@ -28,12 +28,12 @@ public class HeapSort {
         }
     }
 
-    private static void maxHeap(int[] array, int i, int heapSize) {
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-        int max = i;
+    private static void maxHeap(int[] array, int nodeIndex, int heapSize) {
+        int left = 2 * nodeIndex + 1;
+        int right = 2 * nodeIndex + 2;
+        int max = nodeIndex;
 
-        if ((left <= heapSize) && (array[left] > array[i])) {
+        if ((left <= heapSize) && (array[left] > array[nodeIndex])) {
             max = left;
         }
 
@@ -41,8 +41,8 @@ public class HeapSort {
             max = right;
         }
 
-        if(max != i) {
-            Utileria.swap(array, i, max);
+        if(max != nodeIndex) {
+            Utileria.swap(array, nodeIndex, max);
             maxHeap(array, max, heapSize);
         }
     }
