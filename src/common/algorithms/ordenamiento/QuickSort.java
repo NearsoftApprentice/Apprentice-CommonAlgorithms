@@ -1,5 +1,7 @@
 package common.algorithms.ordenamiento;
 
+import common.algorithms.ordenamiento.utileria.Utileria;
+
 public class QuickSort {
 
     /**
@@ -24,17 +26,12 @@ public class QuickSort {
         int pIndex = inicio;
         for(int i=inicio; i <= fin-1; i++) {
             if(array[i] <= pivote) {
-                swap(array, i, pIndex);
+                Utileria.swap(array, i, pIndex);
                 pIndex++;
             }
         }
-        swap(array, pIndex, fin);
+        Utileria.swap(array, pIndex, fin);
         return pIndex;
     }
 
-    private static void swap(int[] array, int indice1, int indice2) {
-        int temp = array[indice1];
-        array[indice1] = array[indice2];
-        array[indice2] = temp;
-    }
 }

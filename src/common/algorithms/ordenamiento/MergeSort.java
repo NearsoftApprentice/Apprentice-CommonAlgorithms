@@ -37,7 +37,7 @@ public class MergeSort {
         int j = 0;
         int k = 0;
 
-        while(i <nL && j < nR) {
+        while(i < nL && j < nR) {
             if(L[i] <= R[j]) {
                 array[k] = L[i];
                 i++;
