@@ -1,8 +1,5 @@
 package common.algorithms.busqueda;
 
-/**
- * Created by ahernandez on 4/20/17.
- */
 public class LinearSearch {
 
     /**
@@ -13,6 +10,11 @@ public class LinearSearch {
      * @return Indice del element <b>target</b> si esta contenido en <b>array</b>. De otra manera retorna -1
      */
     public static int buscar(int[] array, int target) {
+        for (int i=0; i<array.length; i++) {
+            if(target == array[i]) {
+                return i;
+            }
+        }
         return -1;
     }
 }

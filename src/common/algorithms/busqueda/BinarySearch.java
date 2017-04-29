@@ -1,8 +1,7 @@
 package common.algorithms.busqueda;
 
-/**
- * Created by ahernandez on 4/20/17.
- */
+import common.algorithms.ordenamiento.QuickSort;
+
 public class BinarySearch {
 
     /**
@@ -13,6 +12,19 @@ public class BinarySearch {
      * @return Indice del element <b>target</b> si esta contenido en <b>array</b>. De otra manera retorna -1
      */
     public static int buscar(int[] array, int target) {
+        QuickSort.ordenar(array);
+        int inicio = 0;
+        int fin = array.length-1;
+        while(inicio <= fin) {
+            int medio = (inicio+fin)/2;
+            if(target == array[medio]) {
+                return medio;
+            } else if (target < array[medio]) {
+                fin = medio-1;
+            } else {
+                inicio = medio+1;
+            }
+        }
         return -1;
     }
 }
