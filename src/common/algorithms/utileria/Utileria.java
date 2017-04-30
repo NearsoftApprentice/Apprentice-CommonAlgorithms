@@ -1,4 +1,4 @@
-package common.algorithms.ordenamiento.utileria;
+package common.algorithms.utileria;
 
 public class Utileria {
 

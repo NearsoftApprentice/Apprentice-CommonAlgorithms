@@ -1,6 +1,6 @@
 package common.algorithms.ordenamiento;
 
-import common.algorithms.ordenamiento.utileria.Utileria;
+import common.algorithms.utileria.Utileria;
 
 public class QuickSort {
 
