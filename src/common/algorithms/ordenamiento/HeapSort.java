@@ -16,7 +16,7 @@ public class HeapSort {
         for(int i=heapSize; i>0; i--) {
             Utileria.swap(array, 0, i);
             heapSize--;
-            maxHeap(array, 0, heapSize);
+            buildHeap(array, heapSize);
         }
     }
 
