@@ -12,7 +12,7 @@ public class BinarySearch {
      * @return Indice del element <b>target</b> si esta contenido en <b>array</b>. De otra manera retorna -1
      */
     public static int buscar(int[] array, int target) {
-        QuickSort.ordenar(array);
+        //QuickSort.ordenar(array);
         int inicio = 0;
         int fin = array.length-1;
         while(inicio <= fin) {
